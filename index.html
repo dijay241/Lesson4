@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <style>
+      * {
+        box-sizing: border-box; 
+      }
       .btn {
         --safe-area-inset-bottom: env(safe-area-inset-bottom);
         background: blue;
@@ -25,9 +28,20 @@
       .btn:hover {
         background: red;
       }
+      .txt {
+        border: 1px solid #ddd;
+        background: white;
+        color: black;
+        height: 52px;
+        padding: 0 16px;
+        font-size: 14px;
+        width: calc(100% - 32px);
+        margin: 16px;
+      }
     </style>
 </head>
 <body>
+  <input type="text" class="txt">
   <button class="btn">Далее</button>
   <p>.</p>
   <p>.</p>
